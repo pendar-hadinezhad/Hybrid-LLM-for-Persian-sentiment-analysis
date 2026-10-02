@@ -1,0 +1,20 @@
+services:
+  digikala-llm:
+    build: .
+    container_name: digikala-llm
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/workspace
+      - huggingface_cache:/root/.cache/huggingface
+    working_dir: /workspace
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+volumes:
+  huggingface_cache:

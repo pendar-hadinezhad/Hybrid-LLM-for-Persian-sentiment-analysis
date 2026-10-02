@@ -1,0 +1,8 @@
+pandas
+numpy
+scikit-learn
+transformers
+tqdm
+openpyxl
+accelerate
+matplotlib
