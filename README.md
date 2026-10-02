@@ -40,3 +40,6 @@ git commit -m "Describe the change"
 
 ## Research note
 For the main end-to-end experiment, keep ParsBERT trainable. Precomputed embeddings are appropriate for a separate frozen-encoder experiment, not an equivalent replacement.
+
+# Hybrid-LLM-for-Persian-sentiment-analysis
+Hybrid LLM for Persian sentiment analysis
